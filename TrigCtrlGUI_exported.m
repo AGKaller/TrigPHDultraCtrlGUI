@@ -24,10 +24,10 @@ classdef TrigCtrlGUI_exported < handle %matlab.apps.AppBase
         logPath = fullfile(userpath,'TriggerCtrlGUI','logs');
         logFile
         lsloutlet
+        scomObj % Description
     end
     
     properties (Access = private)
-        scomObj % Description
         iON  = 'a';
         iOFF = 'b';
         pON  = 'x';
@@ -289,7 +289,7 @@ classdef TrigCtrlGUI_exported < handle %matlab.apps.AppBase
 %             runStartupFcn(app, @(app)init_gui(app, varargin{:}))
 
             if nargout == 0
-                clear app
+%                 clear app
             end
         end
 
