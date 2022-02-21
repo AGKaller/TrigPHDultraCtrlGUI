@@ -19,7 +19,7 @@ classdef TrigCtrlGUI_exported < handle %matlab.apps.AppBase
         nrisDataTrg = [] % 2-elemnt with time and trigger#: [secondsOfDay, trgNumber]
         bolusPrepDelay = 10; % delay between 1st trigger and actual bolus release in seconds
         bolusTrgNums = [49 50 51];
-        bolusTrgDuration = 8; % duration for setting injector-trigger to high...
+        bolusTrgDuration = 20; % duration for setting injector-trigger to high...
         % CAVE: if too short injection will be aborted?!
         logPath = fullfile(userpath,'TriggerCtrlGUI','logs');
         logFile
